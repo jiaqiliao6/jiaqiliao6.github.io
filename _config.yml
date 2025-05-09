@@ -3,9 +3,8 @@ locale                   : "en-US"
 site_theme               : "default"
 title                    : "Jiaqi Liao"
 title_separator          : "-"
-name                     : &name "Your Name"
-description              : &description "personal description"
-url                      : https://jiaqiliao6.github.io"
+name                     : &name "Jiaqi Liao"
+url                      : "https://jiaqiliao6.github.io"
 repository               : "jiaqiliao6/jiaqiliao6.github.io"
 
 # === 结束自定义部分 ===
