@@ -1,35 +1,31 @@
 ---
 layout: default
-title: Home
 ---
 <div class="container">
-    <header>
-        <div class="name-title">
-            <h1><a href="{{ '/' | relative_url }}">{{ site.author.name }}</a></h1>
-        </div>
-        {% include navigation.html %}
-    </header>
+  <header>
+    <div class="header-content">
+      <h1 class="site-title">Jiaqi Liao</h1>
+      {% include navigation.html %}
+    </div>
+  </header>
 
-    <main>
-        <section class="profile-with-photo">
-            <!-- 替换为您的照片 -->
-            <img src="{{ '/assets/images/photo.jpg' | relative_url }}" 
-                 alt="Photo of Jiaqi Liao" 
-                 class="profile-photo">
-            
-            <div class="profile-info">
-                <h2>Phd Candidate</h2>
-                <p>Department of Economics, Renmin University of China</p>
-                
-                <p>Email: <a href="mailto:liaojq@ruc.edu.cn">liaojq@ruc.edu.cn</a></p>
-                <p><a href="/cv.pdf" target="_blank">Curriculum Vitae</a></p>
-                
-                <div class="bio">
-                    <!-- === 修改以下个人简介 === -->
-                    <p>I am an economist with research interests in labor economics and applied microeconomics. My research agenda focuses on the economics of the family and gender-based violence. I am passionate about combining economic theory with empirical analysis to understand the incentives behind household behavior and the effects of family, gender, and crime on individual labor market outcomes. My work involves both structural form and reduced form analysis.</p>
-                    <!-- === 结束修改 === -->
-                </div>
-            </div>
-        </section>
-    </main>
+  <main>
+    <div class="profile-container">
+      <img src="/assets/images/photo.jpg" alt="Jiaqi Liao" class="profile-photo">
+      
+      <div class="profile-info">
+        <h2>Phd Candidate</h2>
+        <p>Department of Economics, Renmin University of China</p>
+        
+        <div class="contact-info">
+          <p>Email: <a href="mailto:liaojq@ruc.edu.cn">liaojq@ruc.edu.cn</a></p>
+          <p><a href="/cv.pdf" target="_blank" class="cv-link">Curriculum Vitae</a></p>
+        </div>
+        
+        <div class="bio">
+          <p>I am an economist with research interests in labor economics and applied microeconomics...</p>
+        </div>
+      </div>
+    </div>
+  </main>
 </div>
