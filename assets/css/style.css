@@ -1,7 +1,6 @@
-
 /* ===== 全局样式 ===== */
 body {
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-family: "Georgia", "Times New Roman", serif;
   line-height: 1.6;
   color: #333;
   max-width: 1000px;
@@ -29,7 +28,6 @@ body {
 .site-title a {
   color: #222;
   text-decoration: none;
-  transition: color 0.2s;
 }
 
 .site-title a:hover {
@@ -46,7 +44,6 @@ body {
 
 .main-nav li {
   margin-left: 25px;
-  position: relative;
 }
 
 .main-nav a {
@@ -67,7 +64,7 @@ body {
   border-bottom: 2px solid #0066cc;
 }
 
-/* ===== 主体内容 ===== */
+/* ===== 个人资料结构 ===== */
 .profile-section {
   display: flex;
   gap: 40px;
@@ -76,7 +73,6 @@ body {
 
 .profile-photo {
   width: 200px;
-  height: auto;
   border-radius: 4px;
   object-fit: cover;
   border: 1px solid #eee;
@@ -88,7 +84,7 @@ body {
   flex: 1;
   display: flex;
   flex-direction: column;
-  height: 100%;
+}
 
 .profile-details h2 {
   margin: 0 0 8px 0;
@@ -108,9 +104,7 @@ body {
   color: #444;
 }
 
-
-
-/* ===== 清除所有底部多余内容 ===== */
+/* ===== 移除默认底部版权等内容 ===== */
 footer,
 .container > div:last-child:not(.content):not(.profile-section) {
   display: none;
