@@ -115,10 +115,3 @@ body {
   color: #444;
 }
 
-
-
-/* ===== 清除所有底部多余内容 ===== */
-footer,
-.container > div:last-child:not(.content):not(.profile-section) {
-  display: none;
-}
