@@ -9,7 +9,7 @@ title: Home
 PhD Candidate in Economics  
 Department of Economics, Renmin University of China  
 Email: [liaojq@ruc.edu.cn](mailto:liaojq@ruc.edu.cn)  
-CV (/assets/cv.pdf)
+CV (../assets/cv.pdf)
 
 
 ---
