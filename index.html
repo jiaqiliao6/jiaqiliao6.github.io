@@ -3,15 +3,16 @@ layout: default
 ---
 <div class="container">
     <header>
-  <div class="name-title">
-    <h1><a href="{{ '/' | relative_url }}">{{ site.author.name }}</a></h1>
-  </div>
-  {% include navigation.html %}  <!-- 替换原来的nav代码 -->
-</header>
+        <div class="name-title">
+            <h1><a href="{{ '/' | relative_url }}">{{ site.author.name }}</a></h1>
+        </div>
+        {% include navigation.html %}
+    </header>
 
     <main>
         <section class="profile-with-photo">
-            <img src="{{ '/assets/profile.jpg' | relative_url }}" 
+            <!-- 替换为您的照片 -->
+            <img src="{{ '/assets/images/photo.jpg' | relative_url }}" 
                  alt="Photo of {{ site.author.name }}" 
                  class="profile-photo">
             
@@ -19,11 +20,16 @@ layout: default
                 <h2>{{ site.author.position }}</h2>
                 <p>{{ site.author.department }}, {{ site.author.university }}</p>
                 
+                <h2>{{ site.author.affiliation | split: "," | first }}</h2>
+                <p>{{ site.author.affiliation | split: "," | last }}</p>
+                
                 <p>Email: <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
                 <p><a href="{{ site.cv_link }}" target="_blank">Curriculum Vitae</a></p>
                 
                 <div class="bio">
+                    <!-- === 修改以下个人简介 === -->
                     <p>I am an economist with research interests in labor economics and applied microeconomics. My research agenda focuses on the economics of the family and gender-based violence. I am passionate about combining economic theory with empirical analysis to understand the incentives behind household behavior and the effects of family, gender, and crime on individual labor market outcomes. My work involves both structural form and reduced form analysis.</p>
+                    <!-- === 结束修改 === -->
                 </div>
             </div>
         </section>
