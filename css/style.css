@@ -12,9 +12,18 @@ body {
 }
 
 header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* 使姓名和导航栏水平对齐 */
     border-bottom: 1px solid #eee;
-    margin-bottom: 30px;
     padding-bottom: 20px;
+    margin-bottom: 30px;
+    position: relative; /* 为子元素定位提供参考 */
+}
+
+.name-title {
+    flex: 1; /* 占据可用空间 */
+    min-width: 200px; /* 防止姓名换行 */
 }
 
 header h1 {
@@ -28,9 +37,9 @@ header h1 a {
 }
 
 nav ul {
-    list-style: none;
+    display: flex;
+    margin: 0;
     padding: 0;
-    margin: 20px 0 0 0;
 }
 
 nav li {
@@ -45,6 +54,20 @@ nav a {
 
 nav a:hover {
     color: #333;
+}
+
+.profile-with-photo {
+    display: flex;
+    gap: 40px; /* 照片和文本间距 */
+    align-items: flex-start; /* 顶部对齐 */
+}
+
+.profile-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 4px;
+    object-fit: cover;
+    border: 1px solid #eee;
 }
 
 .profile h2 {
@@ -78,6 +101,25 @@ article {
 
 a {
     color: #0066cc;
+}
+
+
+/* 响应式设计 - 小屏幕时堆叠显示 */
+@media (max-width: 768px) {
+    .profile-with-photo {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .profile-photo {
+        width: 150px;
+        height: 150px;
+    }
 }
 
 a:hover {
