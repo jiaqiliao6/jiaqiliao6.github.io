@@ -1,25 +1,37 @@
----
-layout: default
-title: Home
----
-<div class="container">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jiaqi Liao - Home</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
 
-  <main class="profile-section">
-  <!-- 照片现在移动到文本内容左侧 -->
-  <img src="/assets/images/photo.jpg" alt="Jiaqi Liao" class="profile-photo">
-  
-  <div class="profile-details">
-    <h2>Phd Candidate</h2>
-    <p>Department of Economics, Renmin University of China</p>
-    
-    <div class="contact-info">
-      <p>Email: liaoji@ruc.edu.cn</p>
-      <p><a href="/cv.pdf" target="_blank">Curriculum Vitae</a></p>
-    </div>
-    
-    <div class="bio-text">
-      <p>I am an economist with research interests in labor economics and applied microeconomics...</p>
-    </div>
+  <header class="site-header">
+    <h1 class="site-title"><a href="/index.html">Jiaqi Liao</a></h1>
+    {% include navigation.html %}
+  </header>
+
+  <div class="container">
+    <main class="profile-section">
+      <img src="/assets/images/photo.jpg" alt="Jiaqi Liao" class="profile-photo">
+
+      <div class="profile-details">
+        <h2>PhD Candidate</h2>
+        <p>Department of Economics, Renmin University of China</p>
+
+        <div class="contact-info">
+          <p>Email: <a href="mailto:liaoji@ruc.edu.cn">liaoji@ruc.edu.cn</a></p>
+          <p><a href="/cv.pdf" target="_blank">Curriculum Vitae</a></p>
+        </div>
+
+        <div class="bio-text">
+          <p>I am an economist with research interests in labor economics and applied microeconomics...</p>
+        </div>
+      </div>
+    </main>
   </div>
-</main>
-</div>
+
+</body>
+</html>
