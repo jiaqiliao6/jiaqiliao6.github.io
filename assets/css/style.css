@@ -99,17 +99,8 @@ body {
   margin: 0 0 12px 0;
 }
 
-.contact-links {
-  margin: 20px 0;
-}
-
-.contact-links a {
-  color: #0066cc;
-  text-decoration: none;
-}
-
-.contact-links a:hover {
-  text-decoration: underline;
+.contact-info {
+  margin: 10px 0;
 }
 
 .bio-text {
