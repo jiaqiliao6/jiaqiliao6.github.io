@@ -69,6 +69,8 @@ body {
   display: flex;
   gap: 40px;
   margin-top: 20px;
+  ustify-content: center;  /* 让整体居中 */
+  align-items: center;  /* flex-start 顶部对齐，也可以用 center 看你视觉偏好 */
 }
 
 .profile-photo {
