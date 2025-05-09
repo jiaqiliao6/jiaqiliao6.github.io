@@ -1,14 +1,7 @@
 # === 需要自定义的部分 ===
-title: "Jiaqi Liao"  # 修改为您的姓名
-email: liaojq@ruc.edu.cn  # 修改为您的邮箱
 url: "https://jiaqiliao6.github.io/"  # 修改为您的GitHub用户名
 
-author:
-  name: "Jiaqi Liao"  # 修改为您的姓名
-  position: "Phd Candidate"  # 例如: "Assistant Professor"
-  university: "Renmin University of China"  # 例如: "The Chinese University of Hong Kong"
-  department: "Department of Economics"  # 例如: "Department of Economics"
-  #affiliation: ""  # 例如: "Associate Member, University of Oxford"
+
 # === 结束自定义部分 ===
 
 # 以下内容通常不需要修改
@@ -24,7 +17,7 @@ plugins:
 
 navigation:
   - name: "Home"
-    link: "/"
+    link: "/index.html"
   - name: "Research"
     link: "/research.html"
   - name: "Teaching"
