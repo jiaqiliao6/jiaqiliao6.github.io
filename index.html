@@ -4,15 +4,9 @@ layout: default
 <div class="container">
     <header>
         <div class="name-title">
-            <h1><a href="{{ '/' | relative_url }}">Jiaqi Liao</a></h1>
+            <h1><a href="{{ '/' | relative_url }}">{{ site.author.name }}</a></h1>
         </div>
-         <nav>
-            <ul>
-                <li><a href="{{ '/' | relative_url }}">Home</a></li>
-                <li><a href="{{ '/research.html' | relative_url }}">Research</a></li>
-                <li><a href="{{ '/teaching.html' | relative_url }}">Teaching</a></li>
-            </ul>
-        </nav>
+        {% include navigation.html %}
     </header>
 
     <main>
