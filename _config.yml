@@ -1,27 +1,27 @@
-# 站点基本信息
-title: "Jiaqi Liao - Academic Website"  # 网站标题
-email: liaojq@ruc.edu.cn         # 您的邮箱
-description: >                         # 网站描述（用于SEO）
-  Personal academic website of Jiaqi Liao, 
-  PhD Candidate in Economics.
-baseurl: ""                           # 如果站点不在根目录，填写子路径
-url: "https://github.com/jiaqiliao6/jiaqiliao.github.io"      # 替换为您的GitHub Pages网址
-timezone: Asia/Hong_Kong              # 时区设置
+# === 需要自定义的部分 ===
+title: "您的姓名 - 学术主页"  # 修改为您的姓名
+email: your.email@example.com  # 修改为您的邮箱
+url: "https://yourusername.github.io"  # 修改为您的GitHub用户名
 
-# 构建设置
-markdown: kramdown                    # 使用的Markdown解析器
-theme: minima                         # 使用的基本主题（可选）
-plugins:                              # 使用的Jekyll插件
+author:
+  name: "Jiaqi Liao"  # 修改为您的姓名
+  position: "Phd Candidate"  # 例如: "Assistant Professor"
+  university: "Renmin University of China"  # 例如: "The Chinese University of Hong Kong"
+  department: "Department of Economics"  # 例如: "Department of Economics"
+  #affiliation: ""  # 例如: "Associate Member, University of Oxford"
+# === 结束自定义部分 ===
+
+# 以下内容通常不需要修改
+description: >
+  Personal academic website of Your Name
+baseurl: ""
+timezone: Asia/Hong_Kong
+
+markdown: kramdown
+theme: minima
+plugins:
   - jekyll-feed
 
-# 作者信息
-author:
-  name: "Jiaqi Liao"
-  position: "PhD Candidate"
-  university: "Renmin University of China"
-  department: "Department of Economics"
-
-# 导航链接
 navigation:
   - name: "Home"
     link: "/"
@@ -30,5 +30,4 @@ navigation:
   - name: "Teaching"
     link: "/teaching.html"
 
-# 自定义变量（供模板使用）
-cv_link: "assets/cv.pdf"                     # CV文件路径
+cv_link: "/cv.pdf"
