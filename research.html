@@ -3,21 +3,12 @@ layout: default
 title: Research
 ---
 <div class="container">
-    <header>
-        <div class="name-title">
-            <h1><a href="{{ '/' | relative_url }}">{{ site.author.name }}</a></h1>
-        </div>
-        <nav>
-            <ul>
-                {% for item in site.navigation %}
-                <li><a href="{{ item.link | relative_url }}" 
-                       {% if page.url == item.link %}class="active"{% endif %}>
-                    {{ item.name }}
-                </a></li>
-                {% endfor %}
-            </ul>
-        </nav>
-    </header>
+   <header>
+  <div class="name-title">
+    <h1><a href="{{ '/' | relative_url }}">{{ site.author.name }}</a></h1>
+  </div>
+  {% include navigation.html %}  <!-- 替换原来的nav代码 -->
+</header>
 
     <main>
         <section class="publications">
