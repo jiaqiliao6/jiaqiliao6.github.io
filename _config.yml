@@ -3,7 +3,6 @@ locale                   : "en-US"
 site_theme               : "default"
 title                    : "Jiaqi Liao"
 title_separator          : "-"
-name                     : &name "Jiaqi Liao"
 url                      : "https://jiaqiliao6.github.io"
 repository               : "jiaqiliao6/jiaqiliao6.github.io"
 
