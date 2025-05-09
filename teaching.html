@@ -1,43 +1,47 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jiaqi Liao - Teaching</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <div class="container">
-        <header>
-            <h1><a href="index.html">Jiaqi Liao</a></h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="research.html">Research</a></li>
-                    <li><a href="teaching.html">Teaching</a></li>
-                </ul>
-            </nav>
-        </header>
+---
+layout: default
+title: Teaching
+---
+<div class="container">
+    <header>
+        <div class="name-title">
+            <h1><a href="{{ '/' | relative_url }}">{{ site.author.name }}</a></h1>
+        </div>
+        <nav>
+            <ul>
+                {% for item in site.navigation %}
+                <li><a href="{{ item.link | relative_url }}" 
+                       {% if page.url == item.link %}class="active"{% endif %}>
+                    {{ item.name }}
+                </a></li>
+                {% endfor %}
+            </ul>
+        </nav>
+    </header>
 
-        <main>
-            <section class="teaching">
-                <h1>Teaching</h1>
-                
-                <article>
-                    <h2>Undergraduate courses:</h2>
-                    <ul>
-                        <li>Course Name - Semester Year</li>
-                    </ul>
-                </article>
-                
-                <article>
-                    <h2>Graduate courses:</h2>
-                    <ul>
-                        <li>Course Name - Semester Year</li>
-                    </ul>
-                </article>
-            </section>
-        </main>
-    </div>
-</body>
-</html>
+    <main>
+        <section class="teaching">
+            <h1>Teaching</h1>
+            
+            <article>
+                <h2>Current Courses</h2>
+                <ul class="course-list">
+                    <li>
+                        <strong>ECON 101: Introduction to Microeconomics</strong> - Fall 2023
+                        <p>Basic concepts of microeconomic theory: supply and demand, consumer behavior, firm behavior, market structures.</p>
+                    </li>
+                </ul>
+            </article>
+            
+            <article>
+                <h2>Past Courses</h2>
+                <ul class="course-list">
+                    <li>
+                        <strong>ECON 405: Labor Economics</strong> - Spring 2023
+                        <p>Analysis of labor markets, wage determination, human capital investment, and discrimination.</p>
+                    </li>
+                </ul>
+            </article>
+        </section>
+    </main>
+</div>
