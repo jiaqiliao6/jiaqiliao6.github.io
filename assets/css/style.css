@@ -104,6 +104,18 @@ body {
   color: #444;
 }
 
+/* ===== research 结构 ===== */
+.paper-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 15px;
+}
+
+.paper-list li {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
 /* ===== 移除默认底部版权等内容 ===== */
 footer,
 .container > div:last-child:not(.content):not(.profile-section) {
