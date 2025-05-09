@@ -109,3 +109,14 @@ footer,
 .container > div:last-child:not(.content):not(.profile-section) {
   display: none;
 }
+
+.paper-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 15px;
+}
+
+.paper-list li {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
