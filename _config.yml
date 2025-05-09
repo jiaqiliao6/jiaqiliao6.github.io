@@ -5,10 +5,6 @@ url: "https://jiaqiliao6.github.io/"  # 修改为您的GitHub用户名
 # === 结束自定义部分 ===
 
 # 以下内容通常不需要修改
-description: >
-  Personal academic website of Jiaqi Liao
-baseurl: ""
-timezone: Asia/Hong_Kong
 
 markdown: kramdown
 theme: minima
