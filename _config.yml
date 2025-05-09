@@ -6,7 +6,7 @@ description: >                         # 网站描述（用于SEO）
   PhD Candidate in Economics.
 baseurl: ""                           # 如果站点不在根目录，填写子路径
 url: "https://github.com/jiaqiliao6/jiaqiliao.github.io"      # 替换为您的GitHub Pages网址
-timezone: Asia/Bei_jing              # 时区设置
+timezone: Asia/Hong_Kong              # 时区设置
 
 # 构建设置
 markdown: kramdown                    # 使用的Markdown解析器
@@ -31,4 +31,4 @@ navigation:
     link: "/teaching.html"
 
 # 自定义变量（供模板使用）
-cv_link: "/assets/cv.pdf"                     # CV文件路径
+cv_link: "assets/cv.pdf"                     # CV文件路径
