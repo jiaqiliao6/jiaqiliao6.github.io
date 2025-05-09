@@ -3,37 +3,38 @@ layout: default
 title: Research
 ---
 <div class="container">
-   <header>
-  <div class="name-title">
-    <h1><a href="{{ '/' | relative_url }}">{{ site.author.name }}</a></h1>
-  </div>
-  {% include navigation.html %}  <!-- 替换原来的nav代码 -->
-</header>
+    <header>
+        <div class="name-title">
+            <h1><a href="{{ '/' | relative_url }}">{{ site.author.name }}</a></h1>
+        </div>
+        {% include navigation.html %}
+    </header>
 
     <main>
         <section class="publications">
             <h1>Publications</h1>
             
-            <!-- 示例出版物条目 -->
+            <!-- === 修改以下出版物列表 === -->
             <article class="publication">
-                <p><strong>Rational Fertility: Treatment Effect Heterogeneity in the Child Quantity Quality Tradeoff</strong> (with Rufei Guo, Junjian Yi, and Junsen Zhang),<br>
-                Accepted by <em>Journal of Political Economy</em></p>
+                <p><strong>论文标题</strong> (with 合作者),<br>
+                <em>期刊名称</em>, 卷(期), 页码, 年份</p>
             </article>
             
             <article class="publication">
-                <p><strong>In-Mind Housing Transfers and Labor Supply: A Structural Approach</strong>,<br>
-                <em>Journal of Labor Economics</em>, Volume 43, Issue 2, April 2025, Pages 585-633</p>
+                <p><strong>另一篇论文标题</strong>,<br>
+                <em>期刊名称</em>, 卷(期), 页码, 年份</p>
             </article>
-            
-            <!-- 可以继续添加更多出版物 -->
+            <!-- === 结束修改 === -->
             
             <h2>Working Papers</h2>
             
+            <!-- === 修改以下工作论文 === -->
             <article class="publication">
-                <p><strong>Effects of Parental Death on Labor Market Outcomes and Gender Inequalities</strong> (with Matthias Flarlingaard Jensen),<br>
-                IZA Discussion Paper Series No. 17127, Revision Requested by <em>American Economic Review</em></p>
-                <p class="abstract">Nearly everyone experiences the death of a parent in adulthood, but little is known about the effects of parental death on adult children's labor...</p>
+                <p><strong>工作论文标题</strong> (with 合作者),<br>
+                状态 (例如: Revision Requested by <em>期刊名称</em>)</p>
+                <p class="abstract">论文摘要...</p>
             </article>
+            <!-- === 结束修改 === -->
         </section>
     </main>
 </div>
