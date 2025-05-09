@@ -12,7 +12,7 @@ body {
     padding: 20px;
 }
 
-/* 头部样式 - 姓名和导航 */
+/* 头部样式 */
 header {
     display: flex;
     justify-content: space-between;
@@ -20,7 +20,6 @@ header {
     border-bottom: 1px solid #eee;
     padding-bottom: 20px;
     margin-bottom: 30px;
-    position: relative;
 }
 
 .name-title {
@@ -59,7 +58,7 @@ nav a:hover, nav a.active {
     color: #0066cc;
 }
 
-/* 主页内容样式 */
+/* 主页内容 */
 .profile-with-photo {
     display: flex;
     gap: 40px;
@@ -90,7 +89,7 @@ nav a:hover, nav a.active {
     margin-top: 20px;
 }
 
-/* 研究页面样式 */
+/* 研究页面 */
 .publications h1, .teaching h1 {
     font-size: 1.5em;
     border-bottom: 1px solid #eee;
@@ -119,7 +118,7 @@ nav a:hover, nav a.active {
     margin-top: 8px;
 }
 
-/* 教学页面样式 */
+/* 教学页面 */
 .course-list {
     list-style: none;
     padding: 0;
