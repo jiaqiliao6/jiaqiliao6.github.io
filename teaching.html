@@ -3,12 +3,12 @@ layout: default
 title: Teaching
 ---
 <div class="container">
-   <header>
-  <div class="name-title">
-    <h1><a href="{{ '/' | relative_url }}">{{ site.author.name }}</a></h1>
-  </div>
-  {% include navigation.html %}  <!-- 替换原来的nav代码 -->
-</header>
+    <header>
+        <div class="name-title">
+            <h1><a href="{{ '/' | relative_url }}">{{ site.author.name }}</a></h1>
+        </div>
+        {% include navigation.html %}
+    </header>
 
     <main>
         <section class="teaching">
@@ -17,20 +17,24 @@ title: Teaching
             <article>
                 <h2>Current Courses</h2>
                 <ul class="course-list">
+                    <!-- === 修改当前课程 === -->
                     <li>
-                        <strong>ECON 101: Introduction to Microeconomics</strong> - Fall 2023
-                        <p>Basic concepts of microeconomic theory: supply and demand, consumer behavior, firm behavior, market structures.</p>
+                        <strong>课程代码: 课程名称</strong> - 学期 年份
+                        <p>课程描述...</p>
                     </li>
+                    <!-- === 结束修改 === -->
                 </ul>
             </article>
             
             <article>
                 <h2>Past Courses</h2>
                 <ul class="course-list">
+                    <!-- === 修改过往课程 === -->
                     <li>
-                        <strong>ECON 405: Labor Economics</strong> - Spring 2023
-                        <p>Analysis of labor markets, wage determination, human capital investment, and discrimination.</p>
+                        <strong>课程代码: 课程名称</strong> - 学期 年份
+                        <p>课程描述...</p>
                     </li>
+                    <!-- === 结束修改 === -->
                 </ul>
             </article>
         </section>
