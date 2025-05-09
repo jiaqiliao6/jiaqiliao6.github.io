@@ -1,13 +1,8 @@
 <!-- _includes/navigation.html -->
-<nav>
-  <ul class="nav-list">
-    {% for item in site.navigation %}
-      <li class="nav-item">
-        <a href="{{ item.link | relative_url }}" 
-           class="{% if page.url == item.link %}active{% endif %}">
-          {{ item.name }}
-        </a>
-      </li>
-    {% endfor %}
+<nav class="main-nav">
+  <ul>
+    <li><a href="/" {% if page.url == "/" %}class="active"{% endif %}>Home</a></li>
+    <li><a href="/research.html" {% if page.url == "/research.html" %}class="active"{% endif %}>Research</a></li>
+    <li><a href="/teaching.html" {% if page.url == "/teaching.html" %}class="active"{% endif %}>Teaching</a></li>
   </ul>
 </nav>
