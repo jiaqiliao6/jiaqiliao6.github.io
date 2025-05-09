@@ -1,54 +1,73 @@
-/* assets/css/style.css */
-/* 基础样式 */
+/* ===== 全局样式 ===== */
 body {
-  font-family: 'Helvetica', Arial, sans-serif;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
   line-height: 1.6;
   color: #333;
   max-width: 1000px;
   margin: 0 auto;
   padding: 20px;
+  background-color: #fff;
 }
 
-/* 头部样式 */
-.header-content {
+/* ===== 头部区域 ===== */
+.site-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #eee;
-  padding-bottom: 20px;
+  padding: 15px 0;
+  border-bottom: 1px solid #eaeaea;
   margin-bottom: 30px;
 }
 
 .site-title {
   margin: 0;
-  font-size: 2em;
+  font-size: 28px;
+  font-weight: 600;
 }
 
-/* 导航菜单 */
-.nav-list {
+.site-title a {
+  color: #222;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.site-title a:hover {
+  color: #0066cc;
+}
+
+/* ===== 主导航菜单 ===== */
+.main-nav ul {
   display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.nav-item {
+.main-nav li {
   margin-left: 25px;
+  position: relative;
 }
 
-.nav-item a {
+.main-nav a {
+  color: #555;
   text-decoration: none;
-  color: #666;
-  font-size: 1.1em;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 5px 0;
+  transition: color 0.2s;
 }
 
-.nav-item a:hover,
-.nav-item a.active {
+.main-nav a:hover {
   color: #0066cc;
 }
 
-/* 个人资料区域 */
-.profile-container {
+.main-nav a.active {
+  color: #0066cc;
+  border-bottom: 2px solid #0066cc;
+}
+
+/* ===== 主体内容 ===== */
+.profile-section {
   display: flex;
   gap: 40px;
   margin-top: 20px;
@@ -60,45 +79,81 @@ body {
   border-radius: 4px;
   object-fit: cover;
   border: 1px solid #eee;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
-.profile-info h2 {
-  font-size: 1.2em;
-  margin-bottom: 0;
+.profile-details {
+  flex: 1;
 }
 
-.contact-info {
-  margin: 15px 0;
+.profile-details h2 {
+  margin: 0 0 5px 0;
+  font-size: 20px;
+  color: #444;
 }
 
-.cv-link {
-  display: inline-block;
-  margin-top: 5px;
+.profile-details p {
+  margin: 0 0 15px 0;
+  color: #555;
 }
 
-/* 响应式设计 */
+.contact-links {
+  margin: 20px 0;
+}
+
+.contact-links a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.contact-links a:hover {
+  text-decoration: underline;
+}
+
+.bio-text {
+  line-height: 1.7;
+  color: #444;
+}
+
+/* ===== 响应式设计 ===== */
 @media (max-width: 768px) {
-  .header-content {
+  .site-header {
     flex-direction: column;
     align-items: flex-start;
+    padding-bottom: 15px;
   }
-  
-  .nav-list {
-    margin-top: 15px;
+
+  .site-title {
+    margin-bottom: 15px;
   }
-  
-  .nav-item {
-    margin-left: 0;
-    margin-right: 15px;
+
+  .main-nav ul {
+    width: 100%;
+    justify-content: space-between;
   }
-  
-  .profile-container {
+
+  .main-nav li {
+    margin: 0;
+  }
+
+  .profile-section {
     flex-direction: column;
-    gap: 20px;
+    gap: 25px;
   }
-  
+
   .profile-photo {
     width: 150px;
     height: 150px;
   }
+}
+
+/* ===== 实用工具类 ===== */
+.hidden {
+  display: none !important;
+}
+
+/* ===== 清除所有底部多余内容 ===== */
+footer,
+.container > div:last-child:not(.content):not(.profile-section) {
+  display: none;
 }
