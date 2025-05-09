@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jiaqi Liao - Teaching</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="container">
@@ -24,14 +24,14 @@
                 <h1>Teaching</h1>
                 
                 <article>
-                    <h2>Current Courses</h2>
+                    <h2>Undergraduate courses:</h2>
                     <ul>
                         <li>Course Name - Semester Year</li>
                     </ul>
                 </article>
                 
                 <article>
-                    <h2>Past Courses</h2>
+                    <h2>Graduate courses:</h2>
                     <ul>
                         <li>Course Name - Semester Year</li>
                     </ul>
