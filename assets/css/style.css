@@ -22,7 +22,7 @@ body {
 .site-title {
   margin: 0;
   font-size: 28px;
-  font-weight: 600;
+  font-weight: normal;
 }
 
 .site-title a {
