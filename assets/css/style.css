@@ -115,42 +115,7 @@ body {
   color: #444;
 }
 
-/* ===== 响应式设计 ===== */
-@media (max-width: 768px) {
-  .site-header {
-    flex-direction: column;
-    align-items: flex-start;
-    padding-bottom: 15px;
-  }
 
-  .site-title {
-    margin-bottom: 15px;
-  }
-
-  .main-nav ul {
-    width: 100%;
-    justify-content: space-between;
-  }
-
-  .main-nav li {
-    margin: 0;
-  }
-
-  .profile-section {
-    flex-direction: column;
-    gap: 25px;
-  }
-
-  .profile-photo {
-    width: 150px;
-    height: 150px;
-  }
-}
-
-/* ===== 实用工具类 ===== */
-.hidden {
-  display: none !important;
-}
 
 /* ===== 清除所有底部多余内容 ===== */
 footer,
