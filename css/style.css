@@ -1,8 +1,9 @@
+/* 基础样式 */
 body {
     font-family: 'Helvetica', 'Arial', sans-serif;
     line-height: 1.6;
     color: #333;
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 20px;
 }
@@ -11,55 +12,59 @@ body {
     padding: 20px;
 }
 
+/* 头部样式 - 姓名和导航 */
 header {
     display: flex;
     justify-content: space-between;
-    align-items: center; /* 使姓名和导航栏水平对齐 */
+    align-items: center;
     border-bottom: 1px solid #eee;
     padding-bottom: 20px;
     margin-bottom: 30px;
-    position: relative; /* 为子元素定位提供参考 */
+    position: relative;
 }
 
 .name-title {
-    flex: 1; /* 占据可用空间 */
-    min-width: 200px; /* 防止姓名换行 */
+    flex: 1;
+    min-width: 200px;
 }
 
-header h1 {
+.name-title h1 {
     margin: 0;
     font-size: 2em;
 }
 
-header h1 a {
+.name-title a {
     color: #333;
     text-decoration: none;
 }
 
 nav ul {
     display: flex;
+    list-style: none;
     margin: 0;
     padding: 0;
 }
 
 nav li {
-    display: inline;
-    margin-right: 20px;
+    margin-left: 25px;
 }
 
 nav a {
     text-decoration: none;
     color: #666;
+    font-size: 1.1em;
 }
 
-nav a:hover {
-    color: #333;
+nav a:hover, nav a.active {
+    color: #0066cc;
 }
 
+/* 主页内容样式 */
 .profile-with-photo {
     display: flex;
-    gap: 40px; /* 照片和文本间距 */
-    align-items: flex-start; /* 顶部对齐 */
+    gap: 40px;
+    align-items: flex-start;
+    margin-top: 20px;
 }
 
 .profile-photo {
@@ -68,26 +73,29 @@ nav a:hover {
     border-radius: 4px;
     object-fit: cover;
     border: 1px solid #eee;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
 }
 
-.profile h2 {
+.profile-info h2 {
     font-size: 1.2em;
     margin-bottom: 0;
 }
 
-.profile p {
+.profile-info p {
     margin-top: 0;
     margin-bottom: 15px;
 }
 
 .bio {
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
+/* 研究页面样式 */
 .publications h1, .teaching h1 {
     font-size: 1.5em;
     border-bottom: 1px solid #eee;
     padding-bottom: 10px;
+    margin-top: 20px;
 }
 
 .publications h2 {
@@ -95,31 +103,68 @@ nav a:hover {
     margin-top: 30px;
 }
 
-article {
-    margin-bottom: 20px;
+.publication {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #f5f5f5;
 }
 
-a {
-    color: #0066cc;
+.publication:last-child {
+    border-bottom: none;
 }
 
+.abstract {
+    color: #555;
+    font-size: 0.95em;
+    margin-top: 8px;
+}
 
-/* 响应式设计 - 小屏幕时堆叠显示 */
+/* 教学页面样式 */
+.course-list {
+    list-style: none;
+    padding: 0;
+}
+
+.course-list li {
+    margin-bottom: 25px;
+}
+
+.course-list strong {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* 响应式设计 */
 @media (max-width: 768px) {
-    .profile-with-photo {
-        flex-direction: column;
-        gap: 20px;
-    }
-    
     header {
         flex-direction: column;
         align-items: flex-start;
+    }
+    
+    nav ul {
+        margin-top: 15px;
+    }
+    
+    nav li {
+        margin-left: 0;
+        margin-right: 15px;
+    }
+    
+    .profile-with-photo {
+        flex-direction: column;
+        gap: 20px;
     }
     
     .profile-photo {
         width: 150px;
         height: 150px;
     }
+}
+
+/* 链接样式 */
+a {
+    color: #0066cc;
+    text-decoration: none;
 }
 
 a:hover {
