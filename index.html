@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ site.author.name }} - Home</title>
-    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <title>Jiaqi Liao - Home</title>
+    <link rel="stylesheet" href="{{ 'css/style.css' | relative_url }}">
 </head>
 <body>
     <div class="container">
@@ -24,20 +24,17 @@
         <main>
             <section class="profile-with-photo">
                 <!-- 个人照片 -->
-                <img src="{{ '/assets/images/photo.jpg' | relative_url }}" 
-                     alt="Photo of {{ site.author.name }}" 
+                <img src="{{ '/assets/profile.jpg' | relative_url }}" 
+                     alt="Photo of Jiaqi Liao" 
                      class="profile-photo">
                 
                 <!-- 个人信息 -->
                 <div class="profile-info">
-                    <h2>{{ site.author.position }}</h2>
-                    <p>{{ site.author.department }}, {{ site.author.university }}</p>
+                    <h2>PhD Candidate in Economics</h2>
+                    <p>Department of Economics, Renmin University of China</p>
                     
-                    <h2>Associate Member</h2>
-                    <p>Department of Economics, University of Oxford</p>
-                    
-                    <p>Email: <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
-                    <p><a href="{{ site.cv_link }}" target="_blank">Curriculum Vitae</a></p>
+                    <p>Email: <a href="mailto:liaojq@ruc.edu.cn">liaojq@ruc.edu.cn</a></p>
+                    <p><a href="assets/cv.pdf" target="_blank">Curriculum Vitae</a></p>
                     
                     <div class="bio">
                         <p>I am a PhD student in economics with research interests in Environmental and Energy Economics. My current work focuses on [1-2 lines description].</p>
