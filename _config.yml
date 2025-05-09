@@ -1,26 +1,13 @@
-# === 需要自定义的部分 ===
-locale                   : "en-US"
-site_theme               : "default"
-title                    : "Jiaqi Liao"
-title_separator          : "-"
-url                      : "https://jiaqiliao6.github.io"
-repository               : "jiaqiliao6/jiaqiliao6.github.io"
-
-# === 结束自定义部分 ===
-
-# 以下内容通常不需要修改
-
-markdown: kramdown
+title: "Jiaqi Liao"
+description: "PhD Candidate in Economics"
+url: "https://jiaqiliao6.github.io"
 theme: minima
 plugins:
   - jekyll-feed
 
-navigation:
-  - name: "Home"
-    link: "/index.html"
-  - name: "Research"
-    link: "/research.html"
-  - name: "Teaching"
-    link: "/teaching.html"
-
-cv_link: "/cv.pdf"
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: default
