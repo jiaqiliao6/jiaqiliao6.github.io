@@ -1,4 +1,5 @@
-/* ===== 基础重置 ===== */
+
+/* ===== 全局样式 ===== */
 body {
   font-family: 'Helvetica Neue', Arial, sans-serif;
   line-height: 1.6;
@@ -9,7 +10,7 @@ body {
   background-color: #fff;
 }
 
-/* ===== 头部布局 ===== */
+/* ===== 头部区域 ===== */
 .site-header {
   display: flex;
   justify-content: space-between;
@@ -19,24 +20,23 @@ body {
   margin-bottom: 30px;
 }
 
-/* 左侧姓名样式 */
 .site-title {
   margin: 0;
   font-size: 28px;
   font-weight: 600;
-  flex-shrink: 0; /* 防止被压缩 */
 }
 
 .site-title a {
   color: #222;
   text-decoration: none;
+  transition: color 0.2s;
 }
 
-/* ===== 右侧导航菜单 ===== */
-.main-nav {
-  margin-left: auto; /* 将导航推到最右侧 */
+.site-title a:hover {
+  color: #0066cc;
 }
 
+/* ===== 主导航菜单 ===== */
 .main-nav ul {
   display: flex;
   list-style: none;
@@ -46,13 +46,16 @@ body {
 
 .main-nav li {
   margin-left: 25px;
+  position: relative;
 }
 
 .main-nav a {
   color: #555;
   text-decoration: none;
+  font-size: 16px;
   font-weight: 500;
-  padding-bottom: 5px;
+  padding: 5px 0;
+  transition: color 0.2s;
 }
 
 .main-nav a:hover {
@@ -77,42 +80,46 @@ body {
   border-radius: 4px;
   object-fit: cover;
   border: 1px solid #eee;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.profile-details {
+  flex: 1;
 }
 
 .profile-details h2 {
-  margin-top: 0;
+  margin: 0 0 5px 0;
+  font-size: 20px;
   color: #444;
 }
 
-/* ===== 底部修正 ===== */
-/* 强制隐藏所有底部重复内容 */
-body > :last-child:not(.site-header):not(.profile-section),
-.site-footer {
-  display: none !important;
+.profile-details p {
+  margin: 0 0 15px 0;
+  color: #555;
 }
 
-/* ===== 响应式设计 ===== */
-@media (max-width: 768px) {
-  .site-header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  
-  .main-nav {
-    margin-left: 0;
-    margin-top: 15px;
-    width: 100%;
-  }
-  
-  .main-nav ul {
-    justify-content: space-between;
-  }
-  
-  .main-nav li {
-    margin-left: 0;
-  }
-  
-  .profile-section {
-    flex-direction: column;
-  }
+.contact-links {
+  margin: 20px 0;
+}
+
+.contact-links a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.contact-links a:hover {
+  text-decoration: underline;
+}
+
+.bio-text {
+  line-height: 1.7;
+  color: #444;
+}
+
+
+
+/* ===== 清除所有底部多余内容 ===== */
+footer,
+.container > div:last-child:not(.content):not(.profile-section) {
+  display: none;
 }
